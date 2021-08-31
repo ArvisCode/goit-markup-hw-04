@@ -114,15 +114,7 @@ a {
   padding: 20px 0;
 }
 
-.nav-link:-webkit-any-link {
-  color: var(--navigation-link-color);
-}
-
-.contact-link:-webkit-any-link {
-  color: var(--contact-link-color);
-}
-
-.nav-item {
+.nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -142,6 +134,7 @@ a {
   color: var(--contact-link-color);
 
   display: flex;
+  align-items: center;
 }
 
 .nav-link:focus,
@@ -154,7 +147,7 @@ a {
 }
 
 .contact-icon {
-  align-items: center;
+  margin-right: 10px;
 }
 
 .contact-link:hover,
@@ -175,7 +168,7 @@ a {
     ),
     url(../images/hero-background.jpg);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   max-width: 1600px;
   background-position: center;
 
@@ -338,7 +331,6 @@ a {
 .social-list {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .social-item {
@@ -346,7 +338,7 @@ a {
   height: 44px;
 }
 
-.social-item: :not(:last-child) {
+.social-item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -388,8 +380,6 @@ a {
 
 .client-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .client-item {
@@ -437,6 +427,7 @@ a {
 
 .footer-div {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -472,7 +463,6 @@ a {
 }
 
 .footer-social {
-  width: 206px;
   margin-left: 70px;
 }
 
@@ -484,7 +474,6 @@ a {
   text-transform: uppercase;
   color: #ffffff;
 
-  margin-top: 12px;
   margin-bottom: 20px;
 }
 
@@ -559,6 +548,9 @@ a {
   background-color: var(--accent-button-background-color);
   color: var(--accent-button-text-color);
   cursor: pointer;
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .gallery {
@@ -568,6 +560,12 @@ a {
 
 .gallery-item:nth-last-child(n + 4) {
   margin-bottom: 30px;
+}
+
+.gallery-item:focus,
+.gallery-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .gallery-div {
